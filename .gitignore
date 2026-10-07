@@ -1,0 +1,19 @@
+# Large local GIS data
+data/raw/
+data/interim/
+data/processed/
+
+# Temporary analysis outputs
+outputs/working/
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Python temporary files
+__pycache__/
+*.pyc
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
