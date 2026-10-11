@@ -1,18 +1,45 @@
-# Large local GIS data
-data/raw/
-data/interim/
-data/processed/
+# Local GIS datasets
 
-# Temporary analysis outputs
-outputs/working/
+/data/raw/*
 
-# Jupyter temporary files
-.ipynb_checkpoints/
+/data/interim/*
+
+/data/processed/*
+
+/data/processed-Processed_zip/*
+
+ 
+
+# Keep folder placeholders
+
+!/data/raw/.gitkeep
+
+!/data/interim/.gitkeep
+
+!/data/processed/.gitkeep
+
+ 
+
+# macOS metadata
+
+.DS_Store
+
+**/.DS_Store
+
+ 
 
 # Python temporary files
+
 __pycache__/
+
+.ipynb_checkpoints/
+
 *.pyc
 
-# Operating system files
-.DS_Store
-Thumbs.db
+ 
+
+# Local Python environments
+
+.venv/
+
+env/
