@@ -66,8 +66,15 @@ def calculate_walking_path(
 
     Returns
     -------
-    float
-        Total accumulated penalised walking cost.
+    dict
+        Length_m : float
+            Total horizontal track length in metres.
+        Walking_Time_min : float
+            Estimated walking time in minutes without
+            the MCDA suitability penalty.
+        Penalised_Cost : float
+            Accumulated anisotropic movement cost
+            incorporating the suitability penalty.
     """
 
     if penalty_strength < 0:
@@ -96,7 +103,10 @@ def calculate_walking_path(
             )
 
     # Convert input rasters to numerical arrays
-    elevation = np.asarray(dem.filled(np.nan), dtype=np.float64)
+    elevation = np.asarray(
+        dem.filled(np.nan), dtype=np.float64
+    )
+
     scores = np.asarray(
         suitability.filled(np.nan), dtype=np.float64
     )
@@ -130,7 +140,9 @@ def calculate_walking_path(
             raise ValueError("Start or end lies outside raster")
 
         if not valid[row, col]:
-            raise ValueError("Start or end lies on an invalid cell")
+            raise ValueError(
+                "Start or end lies on an invalid cell"
+            )
 
     # Define eight neighbouring movement directions
     directions = [
@@ -156,10 +168,14 @@ def calculate_walking_path(
 
     # Convert projected units to metres (EPSG:7855 expected)
     if dem_crs.to_epsg() != 7855:
-        raise ValueError("Input rasters must use EPSG:7855")
+        raise ValueError(
+            "Input rasters must use EPSG:7855"
+        )
 
     # Initialize accumulated cost
-    cost = np.full((height, width), np.inf)
+    cost = np.full(
+        (height, width), np.inf
+    )
 
     # Store previous cell for reconstructing the route
     previous = np.full(
@@ -187,7 +203,10 @@ def calculate_walking_path(
             nr = row + dr
             nc = col + dc
 
-            if not (0 <= nr < height and 0 <= nc < width):
+            if not (
+                0 <= nr < height
+                and 0 <= nc < width
+            ):
                 continue
 
             if not valid[nr, nc]:
@@ -202,11 +221,15 @@ def calculate_walking_path(
                     continue
 
             # Horizontal travel distance (metres)
-            distance = hypot(dc * dx, dr * dy)
+            distance = hypot(
+                dc * dx,
+                dr * dy
+            )
 
             # Directional rise/run gradient
             elevation_change = (
-                elevation[nr, nc] - elevation[row, col]
+                elevation[nr, nc]
+                - elevation[row, col]
             )
 
             gradient = elevation_change / distance
@@ -215,16 +238,20 @@ def calculate_walking_path(
             speed = tobler_speed(gradient)
 
             # Base walking time in minutes
-            walking_time = distance / (speed * 1000 / 60)
+            walking_time = distance / (
+                speed * 1000 / 60
+            )
 
             # Average suitability between neighbouring cells
             average_suitability = (
-                scores[row, col] + scores[nr, nc]
+                scores[row, col]
+                + scores[nr, nc]
             ) / 2
 
             # Additional suitability penalty
             penalty = (
-                1 + penalty_strength
+                1
+                + penalty_strength
                 * (1 - average_suitability)
             )
 
@@ -238,32 +265,86 @@ def calculate_walking_path(
 
                 cost[nr, nc] = new_cost
 
-                previous[nr, nc] = row * width + col
+                previous[nr, nc] = (
+                    row * width + col
+                )
 
                 heappush(
-                    queue, (new_cost, nr, nc)
+                    queue,
+                    (new_cost, nr, nc)
                 )
 
     # Check that a path was found
     if not isfinite(cost[end]):
-        raise ValueError("No valid path found between points")
+        raise ValueError(
+            "No valid path found between points"
+        )
 
-    # Reconstruct least-cost route
-    route = np.zeros((height, width), dtype=np.uint8)
+    # --------------------------------------------------
+    # Reconstruct least-cost route and calculate statistics
+    # --------------------------------------------------
+
+    route = np.zeros(
+        (height, width),
+        dtype=np.uint8
+    )
+
+    # Initialise route statistics
+    total_length = 0.0
+    total_walking_time = 0.0
 
     row, col = end
 
     while (row, col) != start:
 
+        # Mark current cell as part of route
         route[row, col] = 1
 
+        # Retrieve previous cell
         parent = previous[row, col]
 
         if parent < 0:
-            raise RuntimeError("Route reconstruction failed")
+            raise RuntimeError(
+                "Route reconstruction failed"
+            )
 
-        row, col = divmod(int(parent), width)
+        prev_row, prev_col = divmod(
+            int(parent), width
+        )
 
+        # Calculate horizontal movement distance
+        dr = row - prev_row
+        dc = col - prev_col
+
+        distance = hypot(
+            dc * dx,
+            dr * dy
+        )
+
+        # Calculate directional gradient
+        elevation_change = (
+            elevation[row, col]
+            - elevation[prev_row, prev_col]
+        )
+
+        gradient = elevation_change / distance
+
+        # Calculate walking speed using Tobler's function
+        speed = tobler_speed(gradient)
+
+        # Calculate walking time without suitability penalty
+        walking_time = distance / (
+            speed * 1000 / 60
+        )
+
+        # Accumulate total length and walking time
+        total_length += distance
+        total_walking_time += walking_time
+
+        # Move to previous cell
+        row, col = prev_row, prev_col
+
+    # Include starting cell in route
     route[start] = 1
 
     # Preserve study area mask
@@ -280,20 +361,44 @@ def calculate_walking_path(
 
     # Save route raster
     output_route = Path(output_route)
-    output_route.parent.mkdir(parents=True, exist_ok=True)
+    output_route.parent.mkdir(
+        parents=True,
+        exist_ok=True
+    )
 
     with rasterio.open(
         output_route, "w", **dem_profile
     ) as dst:
         dst.write(route, 1)
 
+    # --------------------------------------------------
+    # Display route statistics
+    # --------------------------------------------------
+
     print("Least-cost route created:", output_route)
+
+    print(
+        "Track length (m):",
+        round(total_length, 2)
+    )
+
+    print(
+        "Estimated walking time (min):",
+        round(total_walking_time, 2)
+    )
+
     print(
         "Accumulated penalised cost:",
         round(float(cost[end]), 3)
     )
 
-    return float(cost[end])
+    # Return all calculated statistics
+    return {
+        "Length_m": float(total_length),
+        "Walking_Time_min": float(total_walking_time),
+        "Penalised_Cost": float(cost[end])
+    }
+
 
 
 # Import required packages
