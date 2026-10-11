@@ -1,2 +1,41 @@
 # MyST build outputs
 _build
+
+# ==================================
+# Jupyter Book generated files
+# ==================================
+_build/
+**/_build/
+.myst/
+
+# ==================================
+# Local GIS datasets
+# ==================================
+/data/raw/*
+/data/interim/*
+/data/processed/*
+
+# Keep folder structure
+!/data/raw/.gitkeep
+!/data/interim/.gitkeep
+!/data/processed/.gitkeep
+
+# ==================================
+# macOS metadata
+# ==================================
+.DS_Store
+**/.DS_Store
+
+# ==================================
+# Python temporary files
+# ==================================
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# ==================================
+# Conda and virtual environments
+# ==================================
+.venv/
+env/
+```
