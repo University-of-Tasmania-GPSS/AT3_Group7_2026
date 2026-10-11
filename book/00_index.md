@@ -1,6 +1,6 @@
 # Welly on the Way
 
-# Finding a path through a complex landscape
+# Balancing Recreational Access and Environmental Conservation Through GIS-Based Walking-Track Optimisation
 
 What makes a great walking track? Is it the shortest route between two destinations, the easiest path across challenging terrain, or the opportunity to experience landscapes that would otherwise remain inaccessible?
 

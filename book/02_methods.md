@@ -4,8 +4,6 @@ How can a proposed walking track be both practical to walk and sensitive to the 
 
 The workflow was designed around a consistent set of spatial criteria, two contrasting suitability models, Weighted Linear Combination (WLC) and the Technique for Order Preference by Similarity to Ideal Solution (TOPSIS), and a directional least-cost path analysis. This approach draws on established GIS-MCDA principles (Malczewski, 2006) and recent Tasmanian geotrail research combining landscape criteria with route optimisation (Williams et al., 2025).
 
-[Insert workflow figure: input data → preprocessing → four standardised criteria → WLC and TOPSIS → directional walking costs → least-cost routes → comparison.]
-
 ## Defining the route-planning problem
 
 The analysis considered potential walking-track alignments for experienced bushwalkers within the approximately 9 km² study area described in Section 2. Routes were required to connect four locations in a fixed sequence:

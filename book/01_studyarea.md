@@ -81,6 +81,20 @@ Four geographical considerations underpin the evaluation of potential walking-tr
 
 The study area's vegetation communities differ in ecological characteristics and susceptibility to disturbance. Conservation-significant species records introduce additional considerations for protecting native habitats. Recreational trail construction and use can contribute to vegetation loss, soil compaction and changes in plant community composition (Ballantyne & Pickering, 2015). Environmental sensitivity is therefore an important consideration in limiting potential ecological impacts from new infrastructure.
 
+
+<div style="text-align: center; margin: 30px 0;">
+
+<img src="../outputs/maps/newprintmap4.png"
+     alt="Wellington Park study area map"
+     style="width: 100%; max-width: 1100px; height: auto;">
+
+<p style="text-align: left; font-size: 14px; margin-top: 12px;">
+<strong>Figure 5.</strong> Vegetation suitability across the Wellington Park study area, showing the project-defined classification of TASVEG vegetation communities into five suitability categories.
+</p>
+
+</div>
+
+
 ### Slope and topography
 
 Wellington Park's variable terrain influences both walking effort and the practicality of track development. Steeper gradients can increase physical demands, while gentler alignments may require longer routes. Walking speed also varies with gradient and direction of movement (Tobler, 1993), making slope relevant to both general corridor suitability and directional movement costs.
@@ -95,16 +109,22 @@ Watercourses and drainage systems contribute to Wellington Park's ecological and
 
 Together, these considerations illustrate the need to balance environmental protection, accessibility and walking convenience. Because an alignment may perform favourably against one characteristic but poorly against another, the project evaluates them collectively using spatial suitability modelling.
 
-## Study Area Extent and Boundaries
 
-The analysis focuses on a defined section of Wellington Park encompassing the designated trailhead on the Mountain River Trail, Slump Pond, Fools Tarn and Hutchinsons Falls.
+### Study Area and Proposed Walking-Track Network
 
-The study-area boundary includes these destinations and surrounding terrain within which alternative walking-track alignments can be investigated. Restricting the analysis to this extent provides a manageable geographical framework for detailed spatial modelling.
+The study area encompasses a section of Wellington Park, southern Tasmania, extending between the Mountain River Trail and three proposed walking destinations: Slump Pond, Fools Tarn and Hutchinsons Falls.
 
-The study area covers approximately 9 km², with elevations ranging from 355 to 1150 metres above sea level, derived from the study-area boundary and Digital Elevation Model (DEM).
+The spatial extent of the study area and the locations of these destinations are presented in Figure 4. The map establishes the geographical context for evaluating potential walking-track alignments across the landscape, connecting the selected destinations while accounting for terrain characteristics, environmental sensitivity and proximity to existing recreational infrastructure.
 
-[Insert Figure 5: Study-area location map showing the analysis boundary, proposed trailhead, Slump Pond, Fools Tarn, Hutchinsons Falls, existing walking tracks, watercourses and terrain.]
 
-Figure 5. Location of the Wellington Park study area, showing the analysis boundary, proposed trailhead, Slump Pond, Fools Tarn and Hutchinsons Falls, alongside existing walking tracks, watercourses and surrounding terrain. Map created using project spatial datasets.
+<div style="text-align: center; margin: 30px 0;">
 
-The project uses the Map Grid of Australia 2020, Zone 55 (MGA2020; EPSG:7855), as its projected coordinate reference system. Detailed preprocessing procedures are described in the following chapter.
+<img src="../outputs/maps/Studyareass.png"
+     alt="Wellington Park study area map"
+     style="width: 100%; max-width: 1100px; height: auto;">
+
+<p style="text-align: left; font-size: 14px; margin-top: 12px;">
+<strong>Figure 4.</strong> Study area and proposed walking-track destinations within Wellington Park, Tasmania. The map illustrates the study area boundary and the locations of Mountain River Trail, Slump Pond, Fools Tarn and Hutchinsons Falls.
+</p>
+
+</div>
