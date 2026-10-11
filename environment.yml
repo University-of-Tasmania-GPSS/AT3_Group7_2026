@@ -1,0 +1,6 @@
+name: kgg375_AT3
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+prefix: /opt/anaconda3/envs/kgg375_AT3
