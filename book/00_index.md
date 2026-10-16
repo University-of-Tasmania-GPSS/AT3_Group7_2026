@@ -1,6 +1,6 @@
 # Welly on the Way
 
-# Finding a path through a complex landscape
+# Balancing Recreational Access and Environmental Conservation Through GIS-Based Walking-Track Optimisation
 
 What makes a great walking track? Is it the shortest route between two destinations, the easiest path across challenging terrain, or the opportunity to experience landscapes that would otherwise remain inaccessible?
 
@@ -17,6 +17,8 @@ This project investigates the potential development of a walking track for exper
 Beginning at a designated trailhead on the Mountain River Trail, the proposed route will visit Slump Pond, continue to Fools Tarn and finish at the base of Hutchinsons Falls.
 
 Connecting these destinations presents competing planning considerations, including environmentally sensitive vegetation, steep terrain, watercourses and existing recreational infrastructure. The project investigates whether a continuous route can accommodate these factors while maintaining recreational accessibility and limiting potential environmental disturbance.
+
+Walking-track planning also forms part of Tasmania's broader protected-area management framework, which recognises the importance of maintaining recreational access while managing walking-track infrastructure and associated environmental impacts (Parks and Wildlife Service, 2011).
 
 ## Why use GIS?
 
