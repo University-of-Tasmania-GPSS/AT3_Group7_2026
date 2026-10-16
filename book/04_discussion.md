@@ -44,7 +44,8 @@ Although A* and Dijkstra's algorithm use different search strategies, both seek 
 
 A more informative alternative would be the **Non-dominated Sorting Genetic Algorithm II (NSGA-II)**, which explores trade-offs between multiple objectives without requiring them to be combined into a single cost value (Deb et al., 2002). For Wellington Park, these objectives could include minimising walking effort, disturbance to conservation-significant vegetation, watercourse crossings and the length of newly constructed track.
 
-Rather than producing one minimum-cost route, NSGA-II could generate a set of approximately Pareto-optimal alternatives, where improving one objective requires compromising another. Such approaches are particularly relevant to spatial route planning, where weighted cost functions may conceal important trade-offs between competing priorities (Xiao et al., 2008).
+
+Rather than producing one minimum-cost route, NSGA-II could generate a set of approximately Pareto-optimal alternatives, where improving one objective requires compromising another. Such approaches are particularly relevant to spatial route planning, where weighted cost functions may conceal important trade-offs between competing priorities (Huang et al., 2008).
 
 This distinction is significant given that both modelled routes traversed sensitive vegetation and made limited use of the existing Moss-Bed Link. A multi-objective approach could reveal whether slightly greater walking effort would substantially reduce new track construction or ecological disturbance.
 

@@ -26,3 +26,10 @@ __pycache__/
 # Conda environments
 .venv/
 env/
+
+# Generated Jupyter Book website files
+book/_build/
+html/
+
+# Website ZIP backup
+Welly_on_the_Way_Website.zip

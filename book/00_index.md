@@ -18,6 +18,8 @@ Beginning at a designated trailhead on the Mountain River Trail, the proposed ro
 
 Connecting these destinations presents competing planning considerations, including environmentally sensitive vegetation, steep terrain, watercourses and existing recreational infrastructure. The project investigates whether a continuous route can accommodate these factors while maintaining recreational accessibility and limiting potential environmental disturbance.
 
+Walking-track planning also forms part of Tasmania's broader protected-area management framework, which recognises the importance of maintaining recreational access while managing walking-track infrastructure and associated environmental impacts (Parks and Wildlife Service, 2011).
+
 ## Why use GIS?
 
 Geographic Information Systems (GIS) provide a systematic framework for evaluating landscapes through multiple spatial datasets. GIS-based multi-criteria decision analysis (MCDA) enables competing environmental and recreational priorities to be considered together rather than selecting routes based on distance or visual interpretation alone (Malczewski, 2006).
