@@ -13,7 +13,7 @@ This diversity provides a compelling setting for investigating walking-track sui
 
 ![Panoramic view of kunanyi / Mount Wellington and the surrounding landscape.](Pictures/Wellingtontop.jpg)
 
-Figure 1. Wellington Park and its surrounding mountain landscape. Photograph: [Taken by Katische Haberfield].
+**Figure 1.** Wellington Park and its surrounding mountain landscape. Photograph: Katische Haberfield.
 
 ## Geosites of Interest
 
@@ -27,9 +27,9 @@ Slump Pond is a shallow depression approximately 100 metres long and 0.5 metres 
 
 ![Slump Pond within Wellington Park.](Pictures/Slumppond.jpg)
 
-Figure 2. Slump Pond, a periglacial landform within Wellington Park. Photograph: [Taken by Mark Williams].
+**Figure 2.** Slump Pond, a periglacial landform within Wellington Park. Photograph: Mark Williams.
 
-A drainage channel to the southwest may convey water during heavy rainfall, linking the landform to its surrounding hydrological system (Geosite survey, 2019).
+A drainage channel to the southwest may convey water during heavy rainfall, linking the landform to its surrounding hydrological system.
 
 The pond is situated within Eucalyptus tasmaniensis dry forest and woodland (TASVEG code DDE), as identified through the project's vegetation mapping (Department of Natural Resources and Environment Tasmania [NRE Tas], 2025). The project's species assessment records the silky snail or silky pinwheel snail within this community, highlighting the ecological importance of leaf litter, ground-layer vegetation and forest-floor habitat.
 
@@ -41,27 +41,25 @@ Fools Tarn reveals another dimension of Wellington Park's geological history. Pe
 
 ![Fools Tarn and its surrounding highland landscape.](Pictures/Foolstarn.jpg)
 
-Figure 3. Fools Tarn and the surrounding highland environment. Photograph: [Taken by Mark Williams].
+**Figure 3.** Fools Tarn and the surrounding highland environment. Photograph: Mark Williams.
 
 Unlike Slump Pond's forested surroundings, Fools Tarn is situated within highland grassy sedgeland (TASVEG code MGH). The 2019 geosite survey describes the area more broadly as buttongrass moorland, recording wet, loose and organically rich soils (Geosite survey, 2019; NRE Tas, 2025).
 
 The project's species assessment records the Dainty leek-orchid within this vegetation community, introducing conservation considerations for the protection of native ground-layer vegetation and associated soils.
 
-
 ![Dainty leek-orchid associated with the Fools Tarn vegetation community.](Pictures/orchids.jpeg)
 
-Figure 4. Prasophyllum amoenum or Dainty leek-orchid. Photograph: [Taken by Natural Resource Managment Tasmania].
-
+**Figure 4.** *Prasophyllum amoenum*, or Dainty leek-orchid. Photograph: Natural Resource Management Tasmania.
 
 The combination of sensitive ground flora, wet organic soils and localised drainage makes Fools Tarn particularly important when considering potential environmental disturbance. Research indicates that recreational trampling can contribute to vegetation damage, soil compaction and erosion (Pickering et al., 2010), highlighting the importance of careful track placement around the tarn.
 
 ### Hutchinsons Falls
 
-The final destination, Hutchinsons Falls, is a waterfall system descending through a series of drops totalling more than 80 metres. Its surrounding landscape contains steep slopes, rocky gullies, cliffs and watercourses, illustrating the interaction between topography and flowing water (Hutchinsons Falls site description, n.d.).
+The final destination, Hutchinsons Falls, is a waterfall system descending through a series of drops totalling more than 80 metres. Its surrounding landscape contains steep slopes, rocky gullies, cliffs and watercourses, illustrating the interaction between topography and flowing water.
 
 ![Hutchinsons Falls within Wellington Park.](Pictures/falls.jpg)
 
-Figure 4. Hutchinsons Falls and the surrounding steep, forested terrain. Photograph: [insert photographer or image source].
+**Figure 5.** Hutchinsons Falls and the surrounding steep, forested terrain. Photograph: [Insert photographer or image source].
 
 The project's TASVEG mapping identifies Eucalyptus tasmaniensis forest with broad-leaf shrubs (WDB) at Hutchinsons Falls. This vegetation community supports a eucalypt canopy and broad-leaf shrub understorey, within which the project's species assessment records the Tasmanian daisytree (NRE Tas, 2025).
 
@@ -77,34 +75,35 @@ The intervening landscape therefore encompasses contrasting vegetation, terrain 
 
 Four geographical considerations underpin the evaluation of potential walking-track corridors: environmental sensitivity, slope, proximity to existing tracks and hydrological sensitivity.
 
-### Environmental sensitivity
+### Environmental Sensitivity
 
 The study area's vegetation communities differ in ecological characteristics and susceptibility to disturbance. Conservation-significant species records introduce additional considerations for protecting native habitats. Recreational trail construction and use can contribute to vegetation loss, soil compaction and changes in plant community composition (Ballantyne & Pickering, 2015). Environmental sensitivity is therefore an important consideration in limiting potential ecological impacts from new infrastructure.
 
-### Slope and topography
+![Vegetation suitability across Wellington Park](../outputs/maps/newprintmap4.png)
+
+**Figure 6.** Vegetation suitability across the Wellington Park study area, showing the project-defined classification of TASVEG vegetation communities into five suitability categories.
+
+### Slope and Topography
 
 Wellington Park's variable terrain influences both walking effort and the practicality of track development. Steeper gradients can increase physical demands, while gentler alignments may require longer routes. Walking speed also varies with gradient and direction of movement (Tobler, 1993), making slope relevant to both general corridor suitability and directional movement costs.
 
-### Existing-track connectivity
+### Existing-Track Connectivity
 
 The relationship between proposed and established walking tracks influences recreational accessibility and the amount of new infrastructure required. Connecting suitable sections of an existing network may reduce unnecessary ground disturbance and create more coherent recreational routes. Given the documented impacts of track infrastructure on soils and vegetation, limiting avoidable new track construction is an important planning consideration (Ballantyne & Pickering, 2015).
 
-### Hydrological sensitivity
+### Hydrological Sensitivity
 
 Watercourses and drainage systems contribute to Wellington Park's ecological and geomorphological processes, while water catchment protection is a recognised management priority (Wellington Park Management Trust, 2013). Track construction can alter local drainage, increase erosion and contribute to sediment movement, particularly where infrastructure intersects concentrated surface runoff (Pickering et al., 2010).
 
 Together, these considerations illustrate the need to balance environmental protection, accessibility and walking convenience. Because an alignment may perform favourably against one characteristic but poorly against another, the project evaluates them collectively using spatial suitability modelling.
 
-## Study Area Extent and Boundaries
+### Study Area and Proposed Walking-Track Network
 
-The analysis focuses on a defined section of Wellington Park encompassing the designated trailhead on the Mountain River Trail, Slump Pond, Fools Tarn and Hutchinsons Falls.
+The study area encompasses a section of Wellington Park, southern Tasmania, extending between the Mountain River Trail and three proposed walking destinations: Slump Pond, Fools Tarn and Hutchinsons Falls.
 
-The study-area boundary includes these destinations and surrounding terrain within which alternative walking-track alignments can be investigated. Restricting the analysis to this extent provides a manageable geographical framework for detailed spatial modelling.
+The spatial extent of the study area and the locations of these destinations are presented in Figure 7. The map establishes the geographical context for evaluating potential walking-track alignments across the landscape, connecting the selected destinations while accounting for terrain characteristics, environmental sensitivity and proximity to existing recreational infrastructure.
 
-The study area covers approximately 9 km², with elevations ranging from 355 to 1150 metres above sea level, derived from the study-area boundary and Digital Elevation Model (DEM).
+![Study area and proposed walking-track destinations](../outputs/maps/Studyareass.png)
 
-[Insert Figure 5: Study-area location map showing the analysis boundary, proposed trailhead, Slump Pond, Fools Tarn, Hutchinsons Falls, existing walking tracks, watercourses and terrain.]
+**Figure 7.** Study area and proposed walking-track destinations within Wellington Park, Tasmania. The map illustrates the study area boundary and the locations of Mountain River Trail, Slump Pond, Fools Tarn and Hutchinsons Falls.
 
-Figure 5. Location of the Wellington Park study area, showing the analysis boundary, proposed trailhead, Slump Pond, Fools Tarn and Hutchinsons Falls, alongside existing walking tracks, watercourses and surrounding terrain. Map created using project spatial datasets.
-
-The project uses the Map Grid of Australia 2020, Zone 55 (MGA2020; EPSG:7855), as its projected coordinate reference system. Detailed preprocessing procedures are described in the following chapter.
