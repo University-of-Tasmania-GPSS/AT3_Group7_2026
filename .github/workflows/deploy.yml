@@ -2,7 +2,7 @@ name: Welly on the Way - GitHub Pages
 
 on:
   push:
-    branches: [website-ellie]
+    branches: [main]
   workflow_dispatch:
 
 env:
